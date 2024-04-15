@@ -1,0 +1,83 @@
+
+
+============================== 18:06:07.667745 | 2ccfc906-45dc-4eca-a250-b4d1effeb92d ==============================
+[0m18:06:07.667745 [info ] [MainThread]: Running with dbt=1.7.3
+[0m18:06:07.671645 [debug] [MainThread]: running dbt with arguments {'printer_width': '120', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/matt/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'False'}
+[0m18:06:18.937814 [debug] [MainThread]: Starter project path: /home/matt/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m18:06:19.045336 [info ] [MainThread]: 
+Your new dbt project "postgres_practice" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:06:19.046349 [info ] [MainThread]: Setting up your profile.
+[0m18:06:56.332274 [error] [MainThread]: Encountered an error:
+
+[0m18:06:56.338104 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 90, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/matt/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 75, in wrapper
+    return func(*args, **kwargs)
+  File "/home/matt/.local/lib/python3.10/site-packages/dbt/cli/main.py", line 515, in init
+    results = task.run()
+  File "/home/matt/.local/lib/python3.10/site-packages/dbt/task/init.py", line 344, in run
+    self.setup_profile(profile_name)
+  File "/home/matt/.local/lib/python3.10/site-packages/dbt/task/init.py", line 263, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "/home/matt/.local/lib/python3.10/site-packages/dbt/task/init.py", line 244, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "/usr/lib/python3/dist-packages/click/termui.py", line 168, in prompt
+    value = prompt_func(prompt)
+  File "/usr/lib/python3/dist-packages/click/termui.py", line 150, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m18:06:56.340637 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 48.716835, "process_user_time": 1.589919, "process_kernel_time": 0.165819, "process_mem_max_rss": "90936", "process_in_blocks": "77784", "command_success": false, "process_out_blocks": "0"}
+[0m18:06:56.341867 [debug] [MainThread]: Command `dbt init` failed at 18:06:56.341704 after 48.72 seconds
+[0m18:06:56.342815 [debug] [MainThread]: Flushing usage events
+
+
+============================== 18:07:27.336636 | f923f481-ba33-4bef-a11e-10e8054f4ff5 ==============================
+[0m18:07:27.336636 [info ] [MainThread]: Running with dbt=1.7.11
+[0m18:07:27.339704 [debug] [MainThread]: running dbt with arguments {'printer_width': '120', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/matt/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m18:07:33.154511 [info ] [MainThread]: A project called postgres_practice already exists here.
+[0m18:07:33.155869 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 5.8672085, "process_user_time": 1.591618, "process_kernel_time": 0.04004, "process_mem_max_rss": "91060", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m18:07:33.156790 [debug] [MainThread]: Command `dbt init` succeeded at 18:07:33.156668 after 5.87 seconds
+[0m18:07:33.157494 [debug] [MainThread]: Flushing usage events
+
+
+============================== 18:07:41.519927 | 8ed57b49-c469-4ce9-8492-e2b37f1b7f27 ==============================
+[0m18:07:41.519927 [info ] [MainThread]: Running with dbt=1.7.11
+[0m18:07:41.522816 [debug] [MainThread]: running dbt with arguments {'printer_width': '120', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/matt/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m18:07:46.141755 [debug] [MainThread]: Starter project path: /home/matt/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m18:07:46.237760 [info ] [MainThread]: 
+Your new dbt project "postgres_practice" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:07:46.238746 [info ] [MainThread]: Setting up your profile.
+[0m18:08:36.612162 [info ] [MainThread]: Profile postgres_practice written to /home/matt/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:08:36.613755 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 55.13248, "process_user_time": 1.632581, "process_kernel_time": 0.119457, "process_mem_max_rss": "96072", "process_in_blocks": "8", "process_out_blocks": "8"}
+[0m18:08:36.614760 [debug] [MainThread]: Command `dbt init` succeeded at 18:08:36.614621 after 55.13 seconds
+[0m18:08:36.615575 [debug] [MainThread]: Flushing usage events
